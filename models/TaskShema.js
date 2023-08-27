@@ -6,7 +6,7 @@ const TaskSchema = new Schema({
     type:String,
     required:[true, "must contain name"],
     trim:true,
-    maxlength:[10, "name can not be more tahn 10 characters"],
+    maxlength:[20, "name can not be more tahn 10 characters"],
    },
    completed:{
     type:Boolean,
