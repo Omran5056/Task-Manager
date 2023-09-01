@@ -18,8 +18,9 @@ const getAllTasks = asyncWrapper( async (req, res) => {
   })
 
   const getTask = asyncWrapper( async(req, res) => {
-    
-      const taskId=req.params.id
+          // const { id: taskID } = req.params
+          // const task = await Task.findOne({ _id: taskID })
+      const taskId=req.params._id
       const task= await Task.findOne(taskId)
       if (!task){
 
